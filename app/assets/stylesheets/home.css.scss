@@ -22,11 +22,17 @@ body, html {
 	height: 100%;
 	width: 15%;
 	margin: 10px 0 0 -8px;
-	border-right: solid 3px #9f4008;
+	border-right: solid 3px #ff8800;
 	/* @include linear-gradient(to right, #f47a33, #cf530b); */
 
 	ul {
 		list-style-type: none;
+		li {
+			margin: 10px 0;
+		}
+		a, a:visited {
+			color: #bdbdbd;
+		}
 	}
 }
 
@@ -37,8 +43,8 @@ body, html {
 .content_wrapper {
 	float: left;
 	margin-left: 18%;
+	margin-right: 3%
 }
 
 .content {
-	width: 100%;
 }
