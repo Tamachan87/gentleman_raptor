@@ -1,0 +1,44 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	background-image: url(/cream_pixels.png);
+	background-color: white;
+	margin-top: -10px;
+	font-family: $helvetica;
+	color: black;
+}
+
+body, html {
+	height: 100%;
+}
+
+.sidebar {
+	float: left;
+	position: fixed;
+	background-color: #555555;
+	color: #bdbdbd;
+	height: 100%;
+	width: 15%;
+	margin: 10px 0 0 -8px;
+	border-right: solid 3px #9f4008;
+	/* @include linear-gradient(to right, #f47a33, #cf530b); */
+
+	ul {
+		list-style-type: none;
+	}
+}
+
+.sidebar_logo {
+	margin-top: 18px;
+}
+
+.content_wrapper {
+	float: left;
+	margin-left: 18%;
+}
+
+.content {
+	width: 100%;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GentlemanRaptor</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="sidebar">
+	<div class="sidebar_logo">
+		Gentleman Raptor
+	</div>
+
+	<div class="navbar">
+		<ul class="nav">
+			<li><%= link_to "Home", :root %></li>
+			<li><%= link_to "Archive", :posts %></li>
+			<li><%= link_to "About Us", :home_about %></li>	
+		</ol>
+	</div>
+
+	<div class="raptor_logo">
+	</div>
+</div>
+
+<div class="content_wrapper">
+	<div class="content">
+		<%= yield %>
+	</div>
+</div>
+
+</body>
+</html>
