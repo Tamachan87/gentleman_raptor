@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>GentlemanRaptor</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -15,9 +15,13 @@
 
 	<div class="navbar">
 		<ul class="nav">
-			<li class="nav_button"><%= link_to "Home", :root, :class => "home" %></li>
-			<li class="nav_button"><%= link_to "Archive", :posts %></li>
-			<li class="nav_button"><%= link_to "About Us", :home_about %></li>	
+			<li><div class="colour_slider" id="home"></div><%= link_to "Home", :root, :class => "nav_button" %></li>
+			<li><div class="colour_slider" id="games"></div><%= link_to "Games", :posts, :class => "nav_button" %></li>
+			<li><div class="colour_slider" id="anime"></div><%= link_to "Anime", :posts, :class => "nav_button" %></li>
+			<li><div class="colour_slider" id="rants"></div><%= link_to "Rants", :posts, :class => "nav_button" %></li>
+			<li><div class="colour_slider" id="shorts"></div><%= link_to "Shorts", :posts, :class => "nav_button" %></li>
+			<li><div class="colour_slider" id="archive"></div><%= link_to "Archive", :posts, :class => "nav_button" %></li>
+			<li><div class="colour_slider" id="about"></div><%= link_to "About Us", :home_about, :class => "nav_button" %></li>	
 		</ol>
 	</div>
 

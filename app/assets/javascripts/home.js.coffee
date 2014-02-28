@@ -2,14 +2,27 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 	
+#$(document).ready ->
+#  $("li.nav_button").hover ->
+#    $(this).animate{left: "0", slow}
+#    return
+
+#  return
+
 $(document).ready ->
-  $("a.home").hover (->
-    $("a.home").animate
-      backgroundPosition: 0 - 150
-    , 50
+  $("a.nav_button").hover (->
+    $(this).animate
+      color: "#fff"
+    , 100
+    $(this).siblings().animate left: "0"
+    , 120
     return
   ), ->
-    $("a.home").animate backgroundPosition: 0
+    $(this).animate
+      color: "#bdbdbd"
+    , 100
+    $(this).siblings().animate left: "-145"
+    , 120
     return
 
   return

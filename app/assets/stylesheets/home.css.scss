@@ -27,12 +27,46 @@ body, html {
 
 	ul {
 		list-style-type: none;
+		position: absolute;
 		li {
+			display: block;
 			margin: 10px 0;
+			padding-left: 10px;
+			position: relative;
+			overflow: hidden;
+			width: 150px;
+			height: 18px; 
+		}
+		.colour_slider {
+			left: -145px;
+			position: absolute;
+			height: 18px;
+			width: 150px;
+		}
+		div#home{
+			background: #33adf4;
+		}
+		div#games{
+			background: #b733f4;
+		}
+		div#anime{
+			background: #59db89;
+		}
+		div#rants{
+			background: #f43370;
+		}
+		div#shorts{
+			background: #f4d733;
+		}
+		div#archive{
+			background: #f47633;
+		}
+		div#about{
+			background: #000;
 		}
 		a, a:visited {
-			background: url(/nav_button.png) repeat 0 0;
-			font-size: 19px;
+			text-decoration: none;
+			position: absolute;
 			color: #bdbdbd;
 		}
 	}

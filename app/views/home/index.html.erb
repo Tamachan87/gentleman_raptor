@@ -1,5 +1,13 @@
 <h1>Home#index</h1>
 
+
+<% @posts.each do |post| %>
+  <div>
+    <%= post.title %>
+    <%= post.body %>
+  </div>
+ <% end %>
+
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur adipiscing rhoncus lectus. Duis volutpat enim eu diam gravida, id blandit ligula mattis. Phasellus at varius quam. Cras dictum leo enim, sed dignissim erat mattis sit amet. Pellentesque lacus purus, vehicula eu laoreet eu, bibendum a massa. Integer id pellentesque diam. Morbi in convallis ipsum, id pellentesque nisl. Etiam in tortor velit. Aenean vel est fermentum risus viverra accumsan.</p>
 
 <p>Nulla facilisi. Mauris venenatis, tortor quis condimentum molestie, ligula orci molestie nunc, nec aliquam nibh quam ac tellus. Mauris et ligula ipsum. In hac habitasse platea dictumst. Curabitur non dui ac massa pellentesque lobortis sit amet vitae nisi. Pellentesque ultricies interdum tortor sit amet tempor. Aenean pharetra posuere erat quis malesuada. Maecenas mollis, nulla cursus placerat euismod, arcu augue consequat nunc, nec consectetur libero mi sit amet ante. Etiam tristique malesuada convallis.</p>
