@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140223054344) do
+ActiveRecord::Schema.define(version: 20140301071409) do
 
   create_table "friendly_id_slugs", force: true do |t|
     t.string   "slug",                      null: false
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20140223054344) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "slug"
+    t.string   "tag"
   end
 
   add_index "posts", ["slug"], name: "index_posts_on_slug"
